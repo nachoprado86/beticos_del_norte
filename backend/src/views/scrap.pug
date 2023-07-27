@@ -6,8 +6,8 @@ html(lang="en")
         title Document
     body 
         a(href="/scrap") Scrap
-        form(action="/", method="get") 
-            label(for="query") Buscar en la base de datos
+        form(action="/scrap", method="post") 
+            label(for="query") scrapeadol
             input(type="text", name="query", id="query")  
             button(type="submit") Buscar
         each producto in data 
